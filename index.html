@@ -97,4 +97,18 @@
             y: rect.y / SCALE
           };
         };
-      })();</script><script defer="defer" src="gui.js"></script></head><body></body></html>
+      })();</script>
+
+<script>
+document.addEventListener("click", function(event) {
+  const logo = event.target.closest("#logo_img");
+
+  if (logo) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+  }
+}, true);
+</script>
+
+<script defer="defer" src="gui.js"></script></head><body></body></html>
